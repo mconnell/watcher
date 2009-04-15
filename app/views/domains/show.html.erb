@@ -1,0 +1,38 @@
+<p>
+  <b>Name:</b>
+  <%=h @domain.name %>
+</p>
+
+<p>
+  <b>Registered:</b>
+  <%=h @domain.registered %>
+</p>
+
+<p>
+  <b>Suspended:</b>
+  <%=h @domain.suspended %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @domain.status %>
+</p>
+
+<p>
+  <b>Whois created at:</b>
+  <%=h @domain.whois_created_at %>
+</p>
+
+<p>
+  <b>Whois expires at:</b>
+  <%=h @domain.whois_expires_at %>
+</p>
+
+<p>
+  <b>Whois changed at:</b>
+  <%=h @domain.whois_changed_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_domain_path(@domain) %> |
+<%= link_to 'Back', domains_path %>

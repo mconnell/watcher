@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  registered: false
+  suspended: false
+  status: MyString
+  whois_created_at: 2009-04-15 21:01:52
+  whois_expires_at: 2009-04-15 21:01:52
+  whois_changed_at: 2009-04-15 21:01:52
+
+two:
+  name: MyString
+  registered: false
+  suspended: false
+  status: MyString
+  whois_created_at: 2009-04-15 21:01:52
+  whois_expires_at: 2009-04-15 21:01:52
+  whois_changed_at: 2009-04-15 21:01:52

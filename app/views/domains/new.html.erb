@@ -1,0 +1,39 @@
+<h1>New domain</h1>
+
+<% form_for(@domain) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :registered %><br />
+    <%= f.check_box :registered %>
+  </p>
+  <p>
+    <%= f.label :suspended %><br />
+    <%= f.check_box :suspended %>
+  </p>
+  <p>
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </p>
+  <p>
+    <%= f.label :whois_created_at %><br />
+    <%= f.datetime_select :whois_created_at %>
+  </p>
+  <p>
+    <%= f.label :whois_expires_at %><br />
+    <%= f.datetime_select :whois_expires_at %>
+  </p>
+  <p>
+    <%= f.label :whois_changed_at %><br />
+    <%= f.datetime_select :whois_changed_at %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', domains_path %>

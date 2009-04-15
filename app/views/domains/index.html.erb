@@ -1,0 +1,32 @@
+<h1>Listing domains</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Registered</th>
+    <th>Suspended</th>
+    <th>Status</th>
+    <th>Whois created at</th>
+    <th>Whois expires at</th>
+    <th>Whois changed at</th>
+  </tr>
+
+<% @domains.each do |domain| %>
+  <tr>
+    <td><%=h domain.name %></td>
+    <td><%=h domain.registered %></td>
+    <td><%=h domain.suspended %></td>
+    <td><%=h domain.status %></td>
+    <td><%=h domain.whois_created_at %></td>
+    <td><%=h domain.whois_expires_at %></td>
+    <td><%=h domain.whois_changed_at %></td>
+    <td><%= link_to 'Show', domain %></td>
+    <td><%= link_to 'Edit', edit_domain_path(domain) %></td>
+    <td><%= link_to 'Destroy', domain, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New domain', new_domain_path %>

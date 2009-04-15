@@ -1,0 +1,13 @@
+# Log files
+/log/*.log
+
+# Temporary files
+/tmp
+
+# Generated documentation
+/doc/api
+/doc/app
+/doc/plugins
+
+# RSpec test coverage
+/coverage

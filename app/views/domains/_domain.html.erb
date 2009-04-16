@@ -1,0 +1,13 @@
+<% content_tag_for :tr, domain, :class => domain.suspended? do %>
+  <td><%=h domain.name %></td>
+  <td><%=h domain.registered %></td>
+  <td><%=h domain.suspended %></td>
+  <td><%=h domain.status %></td>
+  <td><%=d domain.whois_created_at %></td>
+  <%= render_expired(domain.whois_expires_at) %>
+  <td><%=d domain.whois_changed_at %></td>
+  <td><%=d domain.whois_expires_at + 92.days if domain.whois_expires_at.present? %></td>
+  <td><%=d domain.whois_expires_at + 99.days if domain.whois_expires_at.present? %></td>
+  <td><%= link_to 'Update', update_domain_path(domain) %></td>
+  <td><%= link_to 'Destroy', domain, :confirm => 'Are you sure?', :method => :delete %></td>
+<% end %>

@@ -11,3 +11,5 @@
 
 # RSpec test coverage
 /coverage
+
+.DS_Store

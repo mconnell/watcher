@@ -1,5 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :domains, :member => {:update => :any}
+  map.root :controller => "domains"
 
   # The priority is based upon order of creation: first created -> highest priority.
 
